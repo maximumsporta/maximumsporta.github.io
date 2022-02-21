@@ -4,10 +4,65 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Максимум спорта и хобби - Главная</title>
 <style>
-
+    ul {
+      list-style: none; /*убираем маркеры списка*/
+      margin: 0; /*убираем отступы*/
+      padding-left: 0; /*убираем отступы*/
+      margin-top:25px; /*делаем отступ сверху*/
+      background:#819A32; /*добавляем фон всему меню*/
+      height: 50px; /*задаем высоту*/
+    }
+    a {
+      text-decoration: none; /*убираем подчеркивание текста ссылок*/
+      background:#819A32; /*добавляем фон к пункту меню*/
+      color:#fff; /*меняем цвет ссылок*/
+      padding:0px 15px; /*добавляем отступ*/
+      font-family: arial; /*меняем шрифт*/
+      line-height:50px; /*ровняем меню по вертикали*/
+      display: block; 
+      border-right: 1px solid #677B27; /*добавляем бордюр справа*/
+      -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+      -o-transition: all 0.3s 0.01s ease;
+      -webkit-transition: all 0.3s 0.01s ease;
+    }
+    a:hover {
+      background:#D43737;/*добавляем эффект при наведении*/
+    }
+    li {
+      float:left; /*Размещаем список горизонтально для реализации меню*/
+      position:relative; /*задаем позицию для позиционирования*/
+    }
+         
+        /*Стили для скрытого выпадающего меню*/
+        li > ul {
+            position:absolute;
+            top:25px;
+            display:none;   
+        }
+         
+        /*Делаем скрытую часть видимой*/
+        li:hover > ul {
+            display:block; 
+            width:250px;  /*Задаем ширину выпадающего меню*/      
+        }
+       li:hover > ul > li {
+            float:none; /*Убираем горизонтальное позиционирование*/
+        }
 </style>
 </head>
 <body style="background-color: #bdbdbd">
+     <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a>
+            <ul>
+                <li><a href="#">Услуга 1</a></li>
+                <li><a href="#">Длинная услуга 2</a></li>
+                <li><a href="#">Услуга 3</a></li>
+            </ul>
+        </li>  
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
 <h1>Этот сайт на тех. обслуживании</h1>
 <p>Примерно будет работать через 1 год</p>
 <p>Буууум</p>
