@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Максимум спорта и хобби - Главная</title>
 <style>
-    ul {
+    .menu ul {
       list-style: none; /*убираем маркеры списка*/
       margin: 0; /*убираем отступы*/
       padding-left: 0; /*убираем отступы*/
@@ -12,7 +12,7 @@
       background:#559EE7; /*добавляем фон всему меню*/
       height: 50px; /*задаем высоту*/
     }
-    a {
+    .menu a {
       text-decoration: none; /*убираем подчеркивание текста ссылок*/
       background:#559EE7; /*добавляем фон к пункту меню*/
       color:#fff; /*меняем цвет ссылок*/
@@ -25,48 +25,65 @@
       -o-transition: all 0.3s 0.01s ease;
       -webkit-transition: all 0.3s 0.01s ease;
     }
-    a:hover {
+    .menu a:hover {
       background:#4681BD;/*добавляем эффект при наведении*/
     }
-    li {
+    .menu li {
       float:left; /*Размещаем список горизонтально для реализации меню*/
       position:relative; /*задаем позицию для позиционирования*/
     }
          
         /*Стили для скрытого выпадающего меню*/
-        li > ul {
+        .menu li > ul {
             position:absolute;
             top:25px;
             display:none;   
         }
          
         /*Делаем скрытую часть видимой*/
-        li:hover > ul {
+        .menu li:hover > ul {
             display:block; 
             width:250px;  /*Задаем ширину выпадающего меню*/      
         }
-       li:hover > ul > li {
+        .menu li:hover > ul > li {
             float:none; /*Убираем горизонтальное позиционирование*/
         }
+
+
+
+
+        .button a{
+          font-size: 32px;
+          background-color: blue;
+          color: white;
+          border: 10px solid rgb(255, 0, 0);
+          border-radius: 100px;
+          padding: 30px;
+          margin: 21px;
+
+        }      
 </style>
 </head>
 <body style="background-color: #EFEFEF">
+  <div class="menu">
      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Услуги</a>
+        <li><a href="#" class="menu">Главная</a></li>
+        <li><a href="#" class="menu">Услуги</a>
             <ul>
-                <li><a href="#">Услуга 1</a></li>
-                <li><a href="#">Длинная услуга 2</a></li>
-                <li><a href="#">Услуга 3</a></li>
+                <li><a href="#" class="menu">Услуга 1</a></li>
+                <li><a href="#" class="menu">Длинная услуга 2</a></li>
+                <li><a href="#" class="menu">Услуга 3</a></li>
             </ul>
         </li>  
-        <li><a href="#">Цены</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#" class="menu">Цены</a></li>
+        <li><a href="#" class="menu">Контакты</a></li>
     </ul>
+  </div>
 <h1>Этот сайт на тех. обслуживании</h1>
 <p>Примерно будет работать через 1 год</p>
 <p>Буууум</p>
 <p>*звуки кликанья мышкой*</p>
+<div class="button"><a href="google.com">Гугл</a></div>
  
  
 </body>
