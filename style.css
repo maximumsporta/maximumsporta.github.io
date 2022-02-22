@@ -1,0 +1,78 @@
+.menu ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    margin-top:25px; /*делаем отступ сверху*/
+    background:#559EE7; /*добавляем фон всему меню*/
+    height: 50px; /*задаем высоту*/
+ }
+.menu a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background:#559EE7; /*добавляем фон к пункту меню*/
+    color:#fff; /*меняем цвет ссылок*/
+    padding:0px 15px; /*добавляем отступ*/
+    font-family: arial; /*меняем шрифт*/
+    line-height:50px; /*ровняем меню по вертикали*/
+    display: block; 
+    border-right: 1px solid #4681BD; /*добавляем бордюр справа*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+ }
+.menu a:hover {
+    background:#4681BD;/*добавляем эффект при наведении*/
+ }
+.menu li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+   position:relative; /*задаем позицию для позиционирования*/
+ }
+ 
+/*Стили для скрытого выпадающего меню*/
+.menu li > ul {
+    position:absolute;
+    top:25px;
+    display:none;   
+}
+ 
+/*Делаем скрытую часть видимой*/
+.menu li:hover > ul {
+    display:block; 
+    width:250px;  /*Задаем ширину выпадающего меню*/      
+}
+.menu li:hover > ul > li {
+    float:none; /*Убираем горизонтальное позиционирование*/
+}
+
+.button p{
+  font-size: 32px;
+  background-color: #559EE7;
+  color: white;
+  border: 2px solid #4681BD;
+  border-radius: 100px;
+  padding: 30px;
+  margin-right: 500px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}  
+.button iframe{ /* Стиль карты */
+  background-color: #559EE7;
+  color: white;
+  border: 2px solid #4681BD;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  margin: 10px;
+}
+.map{ /* Регулировка под телефоны и тд карты */
+  position:relative;
+  padding: 0 0 56.25% 0;
+  height:0;
+  overflow:hidden;
+}            
+.map iframe,.myvideo object,.myvideo embed{ /* Регулировка под телефоны и тд карты */
+  position: absolute;
+top: 0;
+left: 0;
+width: 98%;
+height: 100%;
+max-width: 1560px;
+max-height: 400px;
+}
