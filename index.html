@@ -1,100 +1,18 @@
-<!DOCTYPE html PUBLIC"-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
+
 <head>
+
+<link rel="stylesheet" href="style.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Максимум спорта и хобби - Главная</title>
-<style>
-    .menu ul {
-      list-style: none; /*убираем маркеры списка*/
-      margin: 0; /*убираем отступы*/
-      padding-left: 0; /*убираем отступы*/
-      margin-top:25px; /*делаем отступ сверху*/
-      background:#559EE7; /*добавляем фон всему меню*/
-      height: 50px; /*задаем высоту*/
-    }
-    .menu a {
-      text-decoration: none; /*убираем подчеркивание текста ссылок*/
-      background:#559EE7; /*добавляем фон к пункту меню*/
-      color:#fff; /*меняем цвет ссылок*/
-      padding:0px 15px; /*добавляем отступ*/
-      font-family: arial; /*меняем шрифт*/
-      line-height:50px; /*ровняем меню по вертикали*/
-      display: block; 
-      border-right: 1px solid #4681BD; /*добавляем бордюр справа*/
-      -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
-      -o-transition: all 0.3s 0.01s ease;
-      -webkit-transition: all 0.3s 0.01s ease;
-    }
-    .menu a:hover {
-      background:#4681BD;/*добавляем эффект при наведении*/
-    }
-    .menu li {
-      float:left; /*Размещаем список горизонтально для реализации меню*/
-      position:relative; /*задаем позицию для позиционирования*/
-    }
-         
-        /*Стили для скрытого выпадающего меню*/
-        .menu li > ul {
-            position:absolute;
-            top:25px;
-            display:none;   
-        }
-         
-        /*Делаем скрытую часть видимой*/
-        .menu li:hover > ul {
-            display:block; 
-            width:250px;  /*Задаем ширину выпадающего меню*/      
-        }
-        .menu li:hover > ul > li {
-            float:none; /*Убираем горизонтальное позиционирование*/
-        }
 
-
-
-
-        .button p{
-          font-size: 32px;
-          background-color: #559EE7;
-          color: white;
-          border: 2px solid #4681BD;
-          border-radius: 100px;
-          padding: 30px;
-          margin-right: 500px;
-          box-shadow: 0 0 40px rgba(0,0,0,0.5);
-        }  
-        .button iframe{
-          background-color: #559EE7;
-          color: white;
-          border: 2px solid #4681BD;
-          border-radius: 50px;
-          box-shadow: 0 0 15px rgba(0,0,0,0.5);
-          margin: 10px;
-        }      
-        
-        
-        .myvideo{
-  position:relative;
-padding: 0 0 56.25% 0;
-height:0;
-overflow:hidden;
-}
-.myvideo iframe,.myvideo object,.myvideo embed{
-  position: absolute;
-top: 0;
-left: 0;
-width: 98%;
-height: 100%;
-max-width: 1560px;
-max-height: 400px;
-}
-.videowrap {
-  max-width: 720px;
-  margin: 0 auto;
-}
-</style>
 </head>
+
 <body style="background-color: #EFEFEF">
+
   <div class="menu">
+
      <ul>
         <li><a href="#" class="menu">Главная</a></li>
         <li><a href="#" class="menu">Услуги</a>
@@ -108,13 +26,18 @@ max-height: 400px;
         <li><a href="#" class="menu">Контакты</a></li>
     </ul>
   </div>
+
 <h1>Этот сайт на тех. обслуживании</h1>
 <p>Примерно будет работать через 1 год</p>
 <p>Буууум</p>
 <p>*звуки кликанья мышкой*</p>
 
-<div class="myvideo"><div class="button"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35589.90070061437!2d47.293314186755765!3d56.116138397845404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a371fa58d8ab9%3A0x4216f1a1f15d2b7f!2sMaximum!5e0!3m2!1sru!2sru!4v1645466086718!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div></div>
+<div class="map">
+  <div class="button">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35589.90070061437!2d47.293314186755765!3d56.116138397845404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a371fa58d8ab9%3A0x4216f1a1f15d2b7f!2sMaximum!5e0!3m2!1sru!2sru!4v1645466086718!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
 
- 
 </body>
+
 </html>
